@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane minHeight="271.0" prefHeight="334.0" prefWidth="403.0" stylesheets="@DarkTheme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ch.makery.address.view.PersonOverviewController">
+   <children>
+      <GridPane layoutX="12.0" layoutY="12.0" prefHeight="217.0" prefWidth="271.0" stylesheets="@DarkTheme.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="71.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="firstNameLabel" text="First Name" />
+            <Label fx:id="lastNameLabel" text="Last Name" GridPane.rowIndex="1" />
+            <Label fx:id="streetLabel" text="Street" GridPane.rowIndex="2" />
+            <Label fx:id="cityLabel" text="City" GridPane.rowIndex="3" />
+            <Label fx:id="postalCodeLabel" text="Postal Code" GridPane.rowIndex="4" />
+            <Label fx:id="birthdayLabel" text="Birthday" GridPane.rowIndex="5" />
+            <TextField GridPane.columnIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button layoutX="231.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleEditPerson" prefHeight="25.0" prefWidth="58.0" text="Cancel" />
+      <Button layoutX="164.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="25.0" prefWidth="58.0" text="OK" />
+      <Button mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>
